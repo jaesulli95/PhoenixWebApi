@@ -15,6 +15,7 @@ namespace PhoenixLifeApi.Controllers
 		{
 			_phoenixContext = context;
 		}
+
 		[HttpGet]
 		[Route("/Projects")]
 		public async Task<ActionResult> GetProject()
