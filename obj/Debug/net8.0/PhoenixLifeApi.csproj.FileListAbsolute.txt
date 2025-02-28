@@ -245,3 +245,4 @@ D:\PhoenixWebApi\obj\Debug\net8.0\refint\PhoenixLifeApi.dll
 D:\PhoenixWebApi\obj\Debug\net8.0\PhoenixLifeApi.pdb
 D:\PhoenixWebApi\obj\Debug\net8.0\PhoenixLifeApi.genruntimeconfig.cache
 D:\PhoenixWebApi\obj\Debug\net8.0\ref\PhoenixLifeApi.dll
+F:\PhoenixApi\obj\Debug\net8.0\PhoenixLifeApi.sourcelink.json

@@ -10,6 +10,7 @@ namespace PhoenixLifeApi.Databases
 		public DbSet<Project> Projects { get; set; }
 		public DbSet<ProjectTask> ProjectTasks { get; set; }
 		public DbSet<Book> Books { get; set; }
+		public DbSet<JournalEntry> SelfJourney { get; set; }
 		public PhoenixContext(DbContextOptions<PhoenixContext> options) : base(options)
 		{
 
