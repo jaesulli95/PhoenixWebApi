@@ -27,10 +27,10 @@ namespace PhoenixLifeApi.Controllers
 		[Route("/Entries/Create")]
 		public async Task<ActionResult> AddEntry([FromBody] JournalEntry Entry)
 		{
-			Entry.DateTime = DateTime.Now.ToString("MM/dd/yyyy");
-			await phoenixContext.SelfJourney.AddAsync(Entry);
-			await phoenixContext.SaveChangesAsync();
-			return Ok();
+            Entry.DateTime = DateTime.Now.ToString("MM-dd-yyyy");
+            await phoenixContext.SelfJourney.AddAsync(Entry);
+            await phoenixContext.SaveChangesAsync();
+            return Ok();
 		}
 	}
 }
