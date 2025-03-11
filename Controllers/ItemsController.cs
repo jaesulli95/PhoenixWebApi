@@ -28,11 +28,18 @@ namespace PhoenixLifeApi.Controllers
 
         [HttpPost]
         [Route("/Items/Create")]
-        public async Task<ActionResult> AddProject([FromBody] Item item)
+        public async Task<ActionResult> AddItem([FromBody] Item item)
         {
             await _phoenixContext.Items.AddAsync(item);
             await _phoenixContext.SaveChangesAsync();
             return Ok();
         }
-    }
+
+		[HttpPost]
+		[Route("/Items/Edit")]
+        public async Task<ActionResult> EditItem([FromBody] Item item)
+        {
+            return Ok();
+        }
+	}
 }
