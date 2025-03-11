@@ -1,5 +1,9 @@
-﻿namespace PhoenixLifeApi.Models
+﻿using System.Diagnostics.CodeAnalysis;
+using Microsoft.EntityFrameworkCore;
+
+namespace PhoenixLifeApi.Models
 {
+	[PrimaryKey("id")]
 	public class Book
 	{
 		public int id { get; set; }

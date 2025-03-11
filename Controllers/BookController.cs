@@ -32,7 +32,7 @@ namespace PhoenixLifeApi.Controllers
 		[Route("/Books/{BookId}")]
 		public async Task<ActionResult> GetBookById(int BookId)
 		{
-			var Book = _phoenixContext.Books.FirstOrDefault(b => b.id == BookId);
+			var Book =  _phoenixContext.Books.FirstOrDefault(b => b.id == BookId);
 			if(Book != null)
 			{
 				return Ok(Book);
