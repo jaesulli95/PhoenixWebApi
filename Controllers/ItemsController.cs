@@ -39,6 +39,8 @@ namespace PhoenixLifeApi.Controllers
 		[Route("/Items/Edit")]
         public async Task<ActionResult> EditItem([FromBody] Item item)
         {
+            _phoenixContext.Items.Update(item);
+            int result = await _phoenixContext.SaveChangesAsync();
             return Ok();
         }
 	}
