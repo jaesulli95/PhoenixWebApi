@@ -19,6 +19,7 @@ namespace PhoenixLifeApi.Controllers
 		[HttpGet]
 		[Route("/Projects")]
 		public async Task<ActionResult> GetProject()
+
 		{
 			var Projects = await _phoenixContext.Projects.Select(x => x).ToListAsync();
 			if(Projects == null)
@@ -120,8 +121,8 @@ namespace PhoenixLifeApi.Controllers
 		[Route("/Projects/Tasks/Create")]
 		public async Task<ActionResult> CreateTask([FromBody] ProjectTask projectTask)
 		{
-			projectTask.Category = 1; //Probably another inconsistency
-			projectTask.Timestamp = DateTime.Now.ToString("MM-dd-yyyy");
+            projectTask.Status = 0;
+            projectTask.DateCreated = DateTime.Now.ToString("MM-dd-yyyy");
 			await _phoenixContext.ProjectTasks.AddAsync(projectTask);
 			await _phoenixContext.SaveChangesAsync();
 			return Ok();
