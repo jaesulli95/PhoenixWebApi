@@ -138,6 +138,32 @@ namespace PhoenixLifeApi.Controllers
 		}
 
 		[HttpPost]
+		[Route("/Projects/Tasks/Update={TaskId}&Status={Status}")]
+		public async Task<ActionResult> TaskUpdateStatus(int TaskId, int Status)
+		{
+			var pTask = _phoenixContext.ProjectTasks.FirstOrDefault(x => x.Id == TaskId);
+			int NewStatus = -1;
+			if (pTask != null)
+			{
+				if(Status == 0)
+				{
+					NewStatus = 1;
+				}else if(Status == 1)
+				{
+					NewStatus = 2;
+					pTask.DateCompleted = DateTime.Now.ToString("MM-dd-yyyy");
+				}else
+				{
+					NewStatus = 2;
+				}
+				pTask.Status = NewStatus;
+				_phoenixContext.ProjectTasks.Update(pTask);
+				await _phoenixContext.SaveChangesAsync();
+			}
+			return Ok();
+        }
+
+		[HttpPost]
 		[Route("/Projects/Tasks/Delete/{ProjectTaskId}")]
 		public async Task<ActionResult> DeleteProjectTask(int ProjectTaskId)
 		{
