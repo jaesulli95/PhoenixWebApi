@@ -55,10 +55,9 @@ namespace PhoenixLifeApi.Controllers
 		[Route("/Projects/Edit")]
 		public async Task<ActionResult> EditProject([FromBody] Project project)
 		{
-			//_phoenixContext.Projects.Attach(project);
-			//_phoenixContext.Entry(project).Property(x => x.Id).IsModified = true;
-			//await _phoenixContext.SaveChangesAsync();
-			return Ok();
+            _phoenixContext.Projects.Update(project);
+            await _phoenixContext.SaveChangesAsync();
+            return Ok();
 		}
 
 		[Route("/Projects/Delete/{ProjectId}")]

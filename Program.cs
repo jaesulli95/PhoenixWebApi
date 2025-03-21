@@ -27,11 +27,11 @@ namespace PhoenixLifeApi
 
             if(app.Environment.IsDevelopment())
             {
-                app.Run("https://0.0.0.0:10801");
+                app.Run();
             }
             else
             {
-                app.Run("https://0.0.0.0:10801");
+                app.Run("http://0.0.0.0:10801");
             }
         }
     }

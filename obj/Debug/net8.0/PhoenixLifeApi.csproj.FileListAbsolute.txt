@@ -172,7 +172,6 @@ E:\PhoenixApi\obj\Debug\net8.0\refint\PhoenixLifeApi.dll
 E:\PhoenixApi\obj\Debug\net8.0\PhoenixLifeApi.pdb
 E:\PhoenixApi\obj\Debug\net8.0\PhoenixLifeApi.genruntimeconfig.cache
 E:\PhoenixApi\obj\Debug\net8.0\ref\PhoenixLifeApi.dll
-F:\PhoenixApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\PhoenixWebApi\bin\Debug\net8.0\appsettings.Development.json
 D:\PhoenixWebApi\bin\Debug\net8.0\appsettings.json
 D:\PhoenixWebApi\bin\Debug\net8.0\PhoenixLifeApi.exe
