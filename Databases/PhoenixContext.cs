@@ -12,6 +12,7 @@ namespace PhoenixLifeApi.Databases
 		public DbSet<Book> Books { get; set; }
 		public DbSet<JournalEntry> SelfJourney { get; set; }
 		public DbSet<Item> Items { get; set; }
+		public DbSet<Expense> Expenses { get; set; }
 		public PhoenixContext(DbContextOptions<PhoenixContext> options) : base(options)
 		{
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PhoenixLifeApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c40ae54130cbd148493d21ebe2753f1e671c9ec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f34a5f65ba2c0f50112891046d712840148fe563")]
 [assembly: System.Reflection.AssemblyProductAttribute("PhoenixLifeApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PhoenixLifeApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
